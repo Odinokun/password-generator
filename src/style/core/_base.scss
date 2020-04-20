@@ -6,7 +6,6 @@
 
 html,
 body {
-  height: 100%;
   margin: 0;
   padding: 0;
 }
@@ -15,7 +14,7 @@ html {
   font-family: $font;
   font-size: 16px;
   line-height: 1.38;
-  color: #1e1e1e;
+  color: #3e3b3e;
 }
 
 body {
@@ -25,82 +24,17 @@ body {
 }
 
 h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h2 {
   font-weight: 600;
   margin: 0 0 10px 0;
 }
 
-p {
-  font-size: 16px;
-  margin: 0 0 10px 0;
-  strong {
-    font-weight: 600;
-  }
-}
-
-a {
-  transition: color .5s;
-  color: $highlight;
-  &:hover {
-    text-decoration: none;
-    color: $highlight-hov;
-  }
-}
-
-ol,
-ul {
-  li {
-    padding: 3px 0;
-  }
-}
-
-input,
-textarea,
-select,
-button {
-  border-radius: 0 !important;
-  outline: none;
-}
-
 input {
+  margin-top: 10px;
   padding: 3px 10px 5px 10px;
-  color: #1e1e1e;
-  border: 1px solid #1e1e1e;
-  &::placeholder {
-    @include placeholder-color(#1e1e1e);
-  }
-}
-
-textarea {
-  resize: none;
-}
-
-input.error,
-textarea.error {
-  border-color: #ed1b24 !important;
-  background: #fbd1d3 !important;
 }
 
 svg {
   display: block;
   overflow: visible;
-}
-
-//изменяем цвет выделения текста мышью
-::selection {
-  // background-color: $brand;
-  // color: $brand;
-  // text-shadow: none;
-}
-
-.container {
-  position: relative;
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 30px;
 }
