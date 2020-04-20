@@ -9,43 +9,44 @@ block variables
 block content
   //begin content
   main.main
-    //begin main__header
-    header.main__header
-      h1.main__title Password generator
-    //end main__header
-      
-    //begin main__form
-    .main__form
-      form.form
-        label.form__label.form__label--range
-          span Password length (<i id='password-length'>10</i>)
-          input(type='range' id='p-length' value='10')
+    .container
+      //begin main__header
+      header.main__header
+        h1.main__title Password generator
+      //end main__header
 
-        label.form__label.form__label--checkbox
-          span Numbers
-          input(type='checkbox' id='p-numbers' checked)
+      //begin main__form
+      .main__form
+        form.form
+          label.form__label.form__label--range
+            span Password length (<i id='password-length'>10</i>)
+            input(type='range' id='p-length' value='10')
 
-        label.form__label.form__label--checkbox
-          span Lowercase
-          input(type='checkbox' id='p-lowercase' checked)
+          label.form__label.form__label--checkbox
+            input(type='checkbox' id='p-numbers' checked)
+            span Numbers
 
-        label.form__label.form__label--checkbox
-          span Uppercase
-          input(type='checkbox' id='p-uppercase')
+          label.form__label.form__label--checkbox
+            input(type='checkbox' id='p-lowercase' checked)
+            span Lowercase
 
-        label.form__label.form__label--checkbox
-          span Special characters
-          input(type='checkbox' id='p-special')
+          label.form__label.form__label--checkbox
+            input(type='checkbox' id='p-uppercase')
+            span Uppercase
 
-        button Generate
-    //end main__form
-    //begin main__results
-    .main__results
-      ul(id='result' class='results')
-        li jdhf^24OSJKKJ
-        li jdhf^24OSJKKJ
-        li jdhf^24OSJKKJ
-        li jdhf^24OSJKKJ
-        li jdhf^24OSJKKJ
-    //end main__results
+          label.form__label.form__label--checkbox
+            input(type='checkbox' id='p-special')
+            span Special characters
+
+          button Generate
+      //end main__form
+      //begin main__results
+      .main__results
+        ul(id='result' class='results')
+          li jdhf^24OSJKKJ
+          li jdhf^24OSJKKJ
+          li jdhf^24OSJKKJ
+          li jdhf^24OSJKKJ
+          li jdhf^24OSJKKJ
+      //end main__results
   //end content
