@@ -19,34 +19,33 @@ block content
       .main__form
         form.form
           label.form__label.form__label--range
-            span Password length (<i id='password-length'>10</i>)
-            input(type='range' id='p-length' value='10')
+            span
+              |Password length (
+              i#password-length 15
+              |)
+            input#p-length(type='range' value='15' max='50')
 
           label.form__label.form__label--checkbox
-            input(type='checkbox' id='p-numbers' checked)
+            input#p-numbers(type='checkbox' checked)
             span Numbers
 
           label.form__label.form__label--checkbox
-            input(type='checkbox' id='p-lowercase' checked)
+            input#p-lowercase(type='checkbox' checked)
             span Lowercase
 
           label.form__label.form__label--checkbox
-            input(type='checkbox' id='p-uppercase')
+            input#p-uppercase(type='checkbox' checked)
             span Uppercase
 
           label.form__label.form__label--checkbox
-            input(type='checkbox' id='p-special')
+            input#p-special(type='checkbox' checked)
             span Special characters
 
-          button Generate
+          button#generate-btn.form__generate-btn(type='button') Generate
       //end main__form
+
       //begin main__results
       .main__results
-        ul(id='result' class='results')
-          li jdhf^24OSJKKJ
-          li jdhf^24OSJKKJ
-          li jdhf^24OSJKKJ
-          li jdhf^24OSJKKJ
-          li jdhf^24OSJKKJ
+        ul#results.results
       //end main__results
   //end content
